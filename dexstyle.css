@@ -1,0 +1,59 @@
+@font-face {
+	font-family: ketchum;
+	src: url(ketchum.otf);
+  }
+
+body{
+background: #e9e9dc;
+	background-color: rgb(255, 255, 255);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Lato';
+	font-size: large;
+	margin: 0;
+
+}
+
+.maindata{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.stats{
+	flex-direction: column;
+
+}
+
+.maindata .name-desciption{
+	display:flex;
+	align-items:start
+	
+}
+
+.name-id{
+	display: flex;
+	justify-content: space-between;
+}
+
+.typing{
+	display:flex;
+	align-items: center;
+	width: 75px;
+	justify-content: space-between
+
+}
+
+.img{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 300px;
+	width: 300px;
+	background-color: rgba(253, 253, 253, 0.658);
+	border-radius: 50%;
+
+}

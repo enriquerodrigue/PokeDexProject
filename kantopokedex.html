@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1 class="title" id="title">Pokedex</h1>
+    <div>
+    <button id="button1" class="gen-button" onclick="sendData(1,151,'Kanto Pokedex')"> Gen 1</button>
+    <button id="button2" class="gen-button" onclick="sendData(152,251,'Johto Pokedex')"> Gen 2</button>
+    <button id="button3" class="gen-button" onclick="sendData(252,386,'Hoenn Pokedex')"> Gen 3</button>
+    <button id="button4" class="gen-button" onclick="sendData(387,494,'Sinnoh Pokedex')"> Gen 4</button>
+    <button id="button5" class="gen-button" onclick="sendData(495,649,'Kalos Pokedex')"> Gen 5</button>
+    <button id="button6" class="gen-button" onclick="sendData(650,721,'Unova Pokedex')"> Gen 6</button>
+    <button id="button7" class="gen-button" onclick="sendData(722,809,'Alola Pokedex')"> Gen 7</button>
+    <button id="button8" class="gen-button" onclick="sendData(810,905,'Galar Pokedex')"> Gen 8</button>
+    </div>
+
+    <script>
+        function sendData(start,end,title){
+            sessionStorage.setItem("start",start)
+            sessionStorage.setItem("end",end)
+            sessionStorage.setItem("title",title)
+            window.location.reload()
+        }
+    </script>
+    <div id="poke_container" class="poke-container"></div>
+    <script src="code.js"></script>
+</body>
+</html>
